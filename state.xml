@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state>
+  <node name = "S">
+    <child>A</child>
+    <child>B</child>
+  </node>
+  <node name = "A">
+    <child>C</child>
+    <child>D</child>
+  </node>
+  <node name = "B">
+    <child>G</child>
+    <child>E</child>
+  </node>
+  <node name = "C">
+  </node>
+  <node name = "D">
+    <child>F</child>
+  </node>
+  <node name = "G">
+  </node>
+  <node name = "E">
+    <child>H</child>
+    <child>I</child>
+  </node>
+  <node name = "F">
+  </node>
+  <node name = "H">
+  </node>
+  <node name = "I">
+  </node>
+</state>
