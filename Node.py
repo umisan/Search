@@ -2,36 +2,26 @@
 
 class Node():
     def __init__(self):
-        self._nodeName = ""
-        self._branch = []
-        self._heuristic = 0
-        self._weight = 0
+        self.nodeName = ""
+        self.childBranch = []
+        self.parent = None
+        self.heuristic = 0
+        self.routeCost = 0
+        self.start = 0
+        self.goal = 0
 
-    def setName(self, name):
-        self._nodeName = name
-
-    def setBranch(self, child):
+    def setChildBranch(self, child, weight):
         branch = Branch()
         branch.setParent(self)
         branch.setChild(child)
-        self._branch.append(branch)
-
-    def setHeuristic(self, value):
-        self._heuristic = value
-
-    def setWeight(self, weight):
-        self._weight = weight
-
-    def getName(self):
-        return self._nodeName
-
-    def getBranchList(self):
-        return self._branch
+        branch.weight = weight
+        self.childBranch.append(branch)
 
 class Branch():
     def __init__(self):
         self._parent = None
         self._child = None
+        self.weight = 0
 
     def setParent(self, parent):
         self._parent = parent

@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <state>
-  <node name = "S">
-    <child>A</child>
-    <child>B</child>
+  <node name = "S" property = "start" heuristic = "0">
+    <child weight = "1">A</child>
+    <child weight = "3">B</child>
   </node>
-  <node name = "A">
-    <child>C</child>
-    <child>D</child>
+  <node name = "A" heuristic = "7">
+    <child weight = "1">B</child>
+    <child weight = "6">F</child>
   </node>
-  <node name = "B">
-    <child>G</child>
-    <child>E</child>
+  <node name = "B" heuristic = "4">
+    <child weight = "6">C</child>
+    <child weight = "3">H</child>
+    <child weight = "6">F</child>
   </node>
-  <node name = "C">
+  <node name = "C" heuristic = "6">
+    <child weight = "5">D</child>
+    <child weight = "4">I</child>
+    <child weight = "2">H</child>
   </node>
-  <node name = "D">
-    <child>F</child>
+  <node name = "D" heuristic = "4">
+    <child weight = "2">I</child>
   </node>
-  <node name = "G">
+  <node name = "G" property = "goal" heuristic = "0">
   </node>
-  <node name = "E">
-    <child>H</child>
-    <child>I</child>
+  <node name = "E" heuristic = "2">
+    <child weight = "1">A</child>
   </node>
-  <node name = "F">
+  <node name = "F" heuristic = "3">
+    <child weight = "7">E</child>
+    <child weight = "2">H</child>
   </node>
-  <node name = "H">
+  <node name = "H" heuristic = "4">
+    <child weight = "1">I</child>
+    <child weight = "7">G</child>
   </node>
-  <node name = "I">
+  <node name = "I" heuristic = "2">
+    <child weight = "5">G</child>
   </node>
 </state>
